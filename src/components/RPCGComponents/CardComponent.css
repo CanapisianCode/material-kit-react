@@ -1,0 +1,182 @@
+#root {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.screen-stats-containter{
+    position: absolute !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    
+}
+.screen-stats{
+    flex-basis: 100% !important;
+}
+
+.card-page{
+    transform: scale(0.5) !important;
+    display: flex;
+    width: 2208px !important;
+    height: 793px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 0 !important;
+}
+
+.card-board {
+    display: flex!important; 
+    flex-direction: column !important;
+    justify-content: space-between!important;
+    align-items: center !important;
+    width: 100%!important;
+    height: 70rem !important;
+    z-index: 5 !important;
+}
+
+.card-container {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: flex-end!important;
+    width: 60% !important; 
+    z-index: 10 !important;
+
+}
+
+.rotated-cards {
+    display: flex !important;
+    justify-content: center !important;
+    transform: rotate(180deg) !important;
+}
+
+.player-cards {
+    display: flex !important;
+    justify-content: center !important;
+
+}
+
+.card {
+    z-index: 15 !important;
+    display: flex!important;
+    justify-content: center !important;
+    align-items: center!important;
+    background-color: #ff6347 !important;
+    border-radius: 10px !important;
+    margin-right: -75px !important;
+    height:  250px !important;
+    width: 200px !important;
+    transition: transform 0.3s, z-index 0.3s !important; /* Add smooth transition */
+    padding: 0 !important;
+    transform: translateZ(50px); 
+  
+}
+
+.card-header {
+    display: flex !important;
+    height: 10% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+    z-index: 16 !important;
+
+}
+
+.image-container {
+    width: 95% !important;
+    height: 70% !important;
+    background-color: #3ac54c !important;
+    padding: 0 !important;
+    z-index: 16 !important;
+
+}
+.card-body{
+    z-index: 16 !important;
+    display: block !important;
+    height: 60% !important;
+    width: 95% !important;
+    overflow-y: auto !important; 
+    padding: 0 !important;
+}
+.card-footer {
+    z-index: 10 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 20% !important;
+    padding: 0 !important;
+}
+
+.card:hover {
+    transform: scale(1.2) translateY(-100px) !important;
+    z-index: 9999 !important;
+}
+
+.card-name {
+    overflow: hidden !important; /* Hide overflow content */
+    text-overflow: ellipsis !important; /* Add ellipsis (...) for overflow text */
+    white-space: nowrap !important; /* Prevent text from wrapping to a new line */
+    height: 100% !important;
+    display: inline-block !important; /* Ensure the element respects its width */
+}
+
+.health { background-color: #ff6347 !important; }
+.defense { background-color: #1e90ff !important; }
+.attack { background-color: #dc143c !important; }
+.cost { 
+    background-color: silver !important; 
+    height: 100% !important;}
+.charisma { background-color: purple !important; }
+
+/* Button Styling */
+.button {
+    height: 100% !important;
+    width: 80% !important;
+    border: solid !important;
+    background-color: #333 !important;
+    color: white !important;  
+    font-weight: bold !important;
+    transition: background-color 0.3s !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.card-container .button:first-child {
+    border-bottom-left-radius: 10px !important;
+}
+
+/* Apply border-radius to the last button (right most) */
+.card-container .button:last-child {
+    border-bottom-right-radius: 10px !important;
+}
+
+.button:hover {
+    background-color: #555 !important;
+}
+
+
+.popup {
+    display: none !important; /* Hidden by default */
+    position: absolute !important;
+    bottom: 110% !important; /* Position above the button */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background-color: white !important;
+    color: black !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    z-index: 9999 !important;
+}
+
+.button:hover .popup {
+    display: block !important; /* Show the pop-up on button hover */
+}
+/* Styles for desktops and laptops */
+@media (min-width: 901px) {
+    .front-stats {
+        font-size: 20px !important;
+    }
+}

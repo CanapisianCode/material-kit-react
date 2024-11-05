@@ -40,7 +40,7 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
+//import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
@@ -82,16 +82,19 @@ const routes = [
             name: "about us",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
+            roles: ["user"],
           },
           {
             name: "contact us",
             route: "/pages/landing-pages/contact-us",
             component: <ContactUs />,
+            roles: ["user"],
           },
           {
             name: "author",
             route: "/pages/landing-pages/author",
             component: <Author />,
+            roles: ["user"],
           },
         ],
       },
@@ -102,6 +105,7 @@ const routes = [
             name: "sign in",
             route: "/pages/authentication/sign-in",
             component: <SignIn />,
+            roles: ["user"],
           },
         ],
       },
@@ -120,11 +124,13 @@ const routes = [
             name: "page headers",
             route: "/sections/page-sections/page-headers",
             component: <PageHeaders />,
+            roles: ["user"],
           },
           {
             name: "features",
             route: "/sections/page-sections/features",
             component: <Features />,
+            roles: ["user"],
           },
         ],
       },
@@ -137,16 +143,19 @@ const routes = [
             name: "navbars",
             route: "/sections/navigation/navbars",
             component: <Navbars />,
+            roles: ["user"],
           },
           {
             name: "nav tabs",
             route: "/sections/navigation/nav-tabs",
             component: <NavTabs />,
+            roles: ["user"],
           },
           {
             name: "pagination",
             route: "/sections/navigation/pagination",
             component: <Pagination />,
+            roles: ["user"],
           },
         ],
       },
@@ -159,11 +168,13 @@ const routes = [
             name: "inputs",
             route: "/sections/input-areas/inputs",
             component: <Inputs />,
+            roles: ["user"],
           },
           {
             name: "forms",
             route: "/sections/input-areas/forms",
             component: <Forms />,
+            roles: ["user"],
           },
         ],
       },
@@ -237,37 +248,6 @@ const routes = [
         ],
       },
     ],
-  },
-  {
-    name: "docs",
-    icon: <Icon>article</Icon>,
-    collapse: [
-      {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
-      },
-      {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
-      },
-      {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-      },
-      {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
-      },
-    ],
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 
